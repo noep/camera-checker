@@ -40,7 +40,6 @@ public class Checker {
                 .stream()
                 .filter(element -> element.childNodeSize() == 9)
                 .collect(Collectors.toList());
-        log.info("{}", elements);
 
         List<String> numbers = elements.stream()
                 .map(element -> element.childNodes().get(1).childNode(0).toString().replace(",","").replace("\n",""))
